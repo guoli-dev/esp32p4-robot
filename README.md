@@ -148,6 +148,23 @@ P4 通过 UART1 (38400 baud) 与 C5 AI 协处理器通信，协议格式为 TLV:
 | 运动控制 | Core 1 | 5 | PID 速度环 100Hz |
 | C5 bridge | - | 3 | UART 命令侦听 |
 
+### C5 AI 语音协处理器 (`c5/`)
+
+C5 协处理器源码位于 [`c5/`](c5/) 目录，详细说明见 [c5/README.md](c5/README.md)。
+
+```
+c5/
+├── main/                    # 主程序
+├── components/
+│   ├── c5_agent/            # 语音引擎、唤醒词、本地 TTS
+│   ├── c5_audio/            # I2S 全双工驱动、音频采集/播放
+│   ├── c5_ble/              # BLE NUS 蓝牙串口遥控
+│   ├── c5_cloud/            # WiFi + Cloud API (LLM/ASR/TTS)
+│   └── c5_comm/             # P4 UART 桥接协议
+├── tools/                   # 工具脚本
+└── README.md
+```
+
 ## 快速开始
 
 ### 环境要求

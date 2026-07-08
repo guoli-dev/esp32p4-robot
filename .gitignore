@@ -79,3 +79,7 @@ Desktop.ini
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# C5 sub-project specific
+c5/sdkconfig
+c5/sdkconfig.old
