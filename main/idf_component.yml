@@ -1,0 +1,7 @@
+## ESP-SR v2.0+ — Espressif Speech Recognition
+## ESP32-P4 fully supported with PSRAM
+dependencies:
+  espressif/esp-sr: ">=2.0.0,<3.0.0"
+  esp_video:
+    version: ">=0.8.0"
+    public: true

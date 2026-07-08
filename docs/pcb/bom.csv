@@ -1,0 +1,40 @@
+Designator,Comment,Quantity,Footprint,Value,Description
+U1,ESP32-P4,1,2×20P×2,ESP32-P4,主控核心板 WTDKP4C5-S1
+U2,ESP32-C5,1,2×20P×2,ESP32-C5,通信协处理器核心板
+U3,TB6612-1,1,DIP-16,TB6612FNG,M1/M3 电机驱动
+U4,TB6612-2,1,DIP-16,TB6612FNG,M2/M4 电机驱动
+U5,MPU6050,1,Module,MPU6050,六轴IMU姿态传感器
+U6,VL53L1X,1,Module,VL53L1X,TOF测距模块
+U7,SHT30,1,Module,SHT30,温湿度传感器
+U8,SSD1306,1,Module,SSD1306,0.96寸OLED显示屏
+U9,MQ135,1,Module,MQ-135,NH3/NOx有害气体传感器
+U10,MQ136,1,Module,MQ-136,H2S/SO2硫化氢传感器
+U12,INMP441,1,Module,INMP441,PDM/I2S麦克风
+U13,MAX98357A,1,Module,MAX98357A,I2S音频功放模块
+U14,GT911,1,FPC,GT911,触摸屏控制器(板载7寸屏)
+U15,OV5647,1,FPC,OV5647,MIPI CSI摄像头(板载)
+U16,INA219,0,SOT-23-5,INA219,电流检测(可选)
+M1,M1电机,1,Terminal,M1,左前轮直流减速电机
+M2,M2电机,1,Terminal,M2,右前轮直流减速电机
+M3,M3电机,1,Terminal,M3,左后轮直流减速电机
+M4,M4电机,1,Terminal,M4,右后轮直流减速电机
+E1,E1编码器,1,Module,E1,M1编码器 A相:GPIO46 B相:GPIO36
+E2,E2编码器,1,Module,E2,M2编码器 A相:GPIO47 B相:GPIO31
+E3,E3编码器,1,Module,E3,M3编码器 A相:GPIO30 B相:GPIO32
+E4,E4编码器,1,Module,E4,M4编码器 A相:GPIO33 B相:GPIO34
+SW1,FWD按键,1,SW-4P,6×6mm,前进档位 GPIO48
+SW2,LEFT按键,1,SW-4P,6×6mm,模式切换 GPIO39
+SW3,RIGHT按键,1,SW-4P,6×6mm,路径切换 GPIO43
+SW4,BACK按键,1,SW-4P,6×6mm,紧急停车 GPIO44
+SPK,扬声器,1,Terminal,8Ω/3W,MAX98357A音频输出
+BAT,电池,1,Terminal,12V,锂电池组(3S/4S)
+R1,R1,2,0805,4.7kΩ,I2C0上拉电阻 GPIO42/41 → 3.3V
+R2,R2,2,0805,4.7kΩ,I2C1上拉电阻 GPIO54/53 → 3.3V
+R3,R3,2,0805,10kΩ,MQ分压串联电阻 AO→10kΩ→GPIO
+R4,R4,2,0805,20kΩ,MQ分压下拉电阻 GPIO→20kΩ→GND
+C1,C1,6,0805,100μF,电源滤波电解电容
+C2,C2,6,0805,0.1μF,电源滤波陶瓷电容
+H1,H1,1,2.54mm,2×20P,P4 J2排母
+H2,H2,1,2.54mm,2×20P,P4 J3排母
+H3,H3,1,2.54mm,2×20P,C5 J2排母
+J1,J1,1,杜邦线,15cm,5根跨板连接线(白/黑/红/黄/蓝)

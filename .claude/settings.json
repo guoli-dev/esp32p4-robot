@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Lenovo\\\\.vscode\\\\extensions\\\\espressif.esp-idf-extension-2.1.0\" -Filter \"export.ps1\" | ForEach-Object { Get-Content $_.FullName -TotalCount 30 })",
+      "Read(//d/Download/WTDKP4C5-S1-master/WTDKP4C5-S1-master/**)",
+      "Read(//d/ESP-code/hello_world_c5/main/**)"
+    ]
+  }
+}

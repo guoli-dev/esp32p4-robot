@@ -1,0 +1,12 @@
+# ESP-IDF Partition Table — P4 16MB flash with ESP-SR model storage
+#
+# ESP-SR model files stored in "model" SPIFFS partition:
+#   wn9_nihaoxiaozhi  ~280 KB  (WakeNet9 wake word + TTS)
+#   mn7_cn            ~2.9 MB  (MultiNet7 Chinese commands, quantized)
+#   Total models:     ~3.5 MB
+#
+# Name,      Type, SubType,    Offset,    Size,       Flags
+nvs,         data, nvs,        0x9000,    0x6000,
+phy_init,    data, phy,        0xF000,    0x1000,
+factory,     app,  factory,    0x10000,   3M,
+model,       data, spiffs,     0x310000,  5M,

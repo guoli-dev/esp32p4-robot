@@ -1,0 +1,7 @@
+dependencies:
+  espressif/esp-dl:
+    version: "^3.1.0"
+  human_face_detect:
+    version: "*"
+  pedestrian_detect:
+    version: "*"

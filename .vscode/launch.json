@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ESP32-P4 最终调试",
+            "type": "espidf",
+            "request": "launch",
+            "serialPort": "COM6",
+            "debugPort": 3333,
+            "logLevel": 2,
+            "openocdExtraArgs": [
+                "-f", "d:\\ESP-code\\hello_world\\openocd_custom.cfg",
+                "-c", "adapter speed 500",
+                "-c", "init",
+                "-c", "reset halt"
+            ]
+        }
+    ]
+}
